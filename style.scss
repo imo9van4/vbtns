@@ -1,12 +1,12 @@
 /* vbtns fonts*/
-$default-font: "Barlow", sans-serif;
+$dfont: "Barlow", sans-serif;
 $bouncy-font: "Caveat", cursive;
 $clean-font: "Jost", sans-serif;
 $important-font: "Secular One", sans-serif;
 
 /*vbtns colors*/
-$default-background: #e6faf7;
-$default-text-color: #ffffff;
+$dbackground: #e6faf7;
+$dtext-color: #ffffff;
 $link-hover: #ffffff;
 $p-def: #3333ff;
 $s-def: #ff3333;
@@ -43,20 +43,24 @@ $link-bg: transparent;
 
 
 $link-border-style: none;
-$default-font-size: 15px;
+$dfont-size: 15px;
+$dradius: 12px;
+$dpadding: 15px 40px;
+$dmargin: 5px;
+/*Global Styles*/
 * {
-  font-family: $default-font;
-  background-color: $default-background;
+  font-family: $dfont;
+  background-color: $dbackground;
 }
 .vbtn {
-  color: $default-text-color;
-  padding: 15px 40px;
-  border-radius: 12px;
-  margin: 5px;
+  color: $dtext-color;
+  padding: $dpadding;
+  border-radius: $dradius;
+  margin: $dmargin;
+  font-size: $dfont-size;
   border-style: none;
   cursor: pointer;
   display: inline;
-  font-size: $default-font-size;
 }
 .vbtn:hover {
   opacity: 0.5;
