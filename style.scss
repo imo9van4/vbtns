@@ -1,4 +1,37 @@
 $fonts: "Barlow", sans-serif;
+$p-def: #3333ff;
+$s-def: #ff3333;
+$link-def: #3333ff;
+$cta-def: #33ff33;
+$p-bounce: #4c5270;
+$s-bounce: #bcece0;
+$cta-bounce: #f652a0;
+$p-clean: #2ff3e0;
+$s-clean: #f51720;
+$cta-clean: #f8d210;
+$p-imp: #1f192b;
+$s-imp: #eec7bb;
+$cta-imp: #3b0918;
+$p-weird: linear-gradient(
+  to right,
+  #003973 0%,
+  #e5e5be 51%,
+  #003973 100%
+);
+$s-weird: linear-gradient(
+  to right,
+  #16a085 0%,
+  #f4d03f 51%,
+  #16a085 100%
+);
+$cta-weird: linear-gradient(
+  to right,
+  #dc2424 0%,
+  #4a569d 51%,
+  #dc2424 100%
+);
+$link-background: transparent;
+$link-border-style: none;
 
 * {
   font-family: $fonts;
@@ -14,23 +47,22 @@ $fonts: "Barlow", sans-serif;
   font-family: $fonts;
 }
 .vbtn:hover {
-  background-color: #5454ff;
+  opacity: 0.5;
   color: white;
 }
 .primary-boring {
-  background-color: #3333ff;
+  background-color: $p-def;
 }
 .secondary-boring {
-  background-color: #ff3333;
+  background-color: $s-def;
 }
 .cta-boring {
-  background-color: #33ff33;
+  background-color: $cta-def;
   color: black;
 }
 .link-boring {
-  border-style: none;
-  background-color: transparent;
-  color: blue;
+  color: $link-def;
+  background-color: $link-background;
 }
 .primary-fun {
   background-color: #4c5270;
@@ -200,39 +232,5 @@ link-boring:hover {
   border-style: none;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  z-index: 1;
-}
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-boring{
-  background-color: #f8d210;
-  color: black;
-}
-.caret{
-  background-color:#f8d210;
-  width: 25px;
-  height: 60px;
-  margin: -10px;
-  border: 2px solid black;
-  display: inline;
-}
