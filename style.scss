@@ -1,4 +1,13 @@
-$fonts: "Barlow", sans-serif;
+/* vbtns fonts*/
+$default-font: "Barlow", sans-serif;
+$bouncy-font: "Caveat", cursive;
+$clean-font: "Jost", sans-serif;
+$important-font: "Secular One", sans-serif;
+
+/*vbtns colors*/
+$default-background: #e6faf7;
+$default-text-color: #ffffff;
+$link-hover: #ffffff;
 $p-def: #3333ff;
 $s-def: #ff3333;
 $link-def: #3333ff;
@@ -30,25 +39,28 @@ $cta-weird: linear-gradient(
   #4a569d 51%,
   #dc2424 100%
 );
-$link-background: transparent;
-$link-border-style: none;
+$link-bg: transparent;
 
+
+$link-border-style: none;
+$default-font-size: 15px;
 * {
-  font-family: $fonts;
+  font-family: $default-font;
+  background-color: $default-background;
 }
 .vbtn {
-  color: white;
+  color: $default-text-color;
   padding: 15px 40px;
   border-radius: 12px;
   margin: 5px;
   border-style: none;
   cursor: pointer;
   display: inline;
-  font-family: $fonts;
+  font-size: $default-font-size;
 }
 .vbtn:hover {
   opacity: 0.5;
-  color: white;
+  color: $link-hover;
 }
 .primary-boring {
   background-color: $p-def;
@@ -58,40 +70,39 @@ $link-border-style: none;
 }
 .cta-boring {
   background-color: $cta-def;
-  color: black;
 }
 .link-boring {
   color: $link-def;
-  background-color: $link-background;
+  background-color: $link-bg;
 }
 .primary-fun {
-  background-color: #4c5270;
-  color: white;
+  background-color: $p-bounce;
+  color: $link-hover;
 }
 .secondary-fun {
-  background-color: #bcece0;
+  background-color: $s-bounce;
   color: black;
 }
 .cta-fun {
-  background-color: #f652a0;
+  background-color: $cta-bounce;
 }
 .fun {
   border-radius: 8px;
   font-size: 18px;
-  font-family: "Caveat", cursive;
+  font-family: $bouncy-font;
 }
 .fun:hover {
   transform: translateY(-18px);
 }
 .primary-cutesy {
-  background-color: #2ff3e0;
+  background-color: $p-clean;
   color: black;
 }
 .secondary-cutesy {
-  background-color: #f51720;
+  background-color: $s-clean;
 }
 .cta-cutesy {
-  background-color: #f8d210;
+  background-color: $cta-clean;
   color: black;
 }
 .link-cutesy {
@@ -101,7 +112,7 @@ $link-border-style: none;
 .cutesy {
   text-transform: lowercase;
   font-size: 14px;
-  font-family: "Jost", sans-serif;
+  font-family: $clean-font;
 }
 .boring {
   border-radius: 0px;
@@ -138,7 +149,7 @@ $link-border-style: none;
 }
 .link-classy {
   color: #4e706a;
-  background-color: transparent;
+  background-color: $link-bg;
 }
 .classy {
   border-radius: 3px;

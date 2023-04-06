@@ -1,21 +1,24 @@
+/* vbtns fonts*/
+/*vbtns colors*/
 * {
   font-family: "Barlow", sans-serif;
+  background-color: #e6faf7;
 }
 
 .vbtn {
-  color: white;
+  color: #ffffff;
   padding: 15px 40px;
   border-radius: 12px;
   margin: 5px;
   border-style: none;
   cursor: pointer;
   display: inline;
-  font-family: "Barlow", sans-serif;
+  font-size: 15px;
 }
 
 .vbtn:hover {
   opacity: 0.5;
-  color: white;
+  color: #ffffff;
 }
 
 .primary-boring {
@@ -28,7 +31,6 @@
 
 .cta-boring {
   background-color: #33ff33;
-  color: black;
 }
 
 .link-boring {
@@ -38,7 +40,7 @@
 
 .primary-fun {
   background-color: #4c5270;
-  color: white;
+  color: #ffffff;
 }
 
 .secondary-fun {
